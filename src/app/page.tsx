@@ -113,7 +113,9 @@ export default function Home() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
             <div>
               <span style={{ color: 'var(--synapse-primary)', fontWeight: 'bold', letterSpacing: '0.05em', textTransform: 'uppercase', fontSize: '0.9rem' }}>Founder & Lead Architect</span>
-              <h2 style={{ fontSize: '2.5rem', margin: '0.5rem 0', fontFamily: 'var(--font-heading)' }}>SynDx</h2>
+              <h2 style={{ fontSize: '2.5rem', margin: '0.5rem 0', fontFamily: 'var(--font-heading)' }}>
+                <a href="https://syndxlabs.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>SynDx</a>
+              </h2>
             </div>
             <div style={{ background: 'rgba(16, 185, 129, 0.1)', color: 'var(--synapse-primary)', padding: '0.5rem 1rem', borderRadius: '99px', fontSize: '0.9rem', fontWeight: '600' }}>
               The "Speedrun" Pitch
