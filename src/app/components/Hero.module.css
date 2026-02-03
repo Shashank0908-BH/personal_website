@@ -1,5 +1,6 @@
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
+    /* Slightly reduced for better fold visibility */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +13,32 @@
     text-align: center;
     z-index: 10;
     max-width: 900px;
+}
+
+/* ... existing styles ... */
+
+.glow-silicon {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, transparent 70%);
+    /* Adjusted for light mode */
+    filter: blur(80px);
+    z-index: 1;
+}
+
+.glow-synapse {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(5, 150, 105, 0.1) 0%, transparent 70%);
+    /* Adjusted for light mode */
+    filter: blur(80px);
+    z-index: 1;
 }
 
 .eyebrow {
@@ -33,6 +60,7 @@
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: fadeUp 0.8s ease-out 0.4s forwards;
+    color: var(--text-primary);
 }
 
 .subtitle {
@@ -65,29 +93,11 @@
 .highlight {
     color: var(--silicon-secondary);
     font-weight: 600;
+    transition: color 0.2s;
 }
 
-/* Background Effects */
-.glow-silicon {
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 50vw;
-    height: 50vw;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
-    filter: blur(80px);
-    z-index: 1;
-}
-
-.glow-synapse {
-    position: absolute;
-    bottom: -10%;
-    right: -10%;
-    width: 50vw;
-    height: 50vw;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
-    filter: blur(80px);
-    z-index: 1;
+.highlight:hover {
+    color: var(--silicon-primary);
 }
 
 @keyframes fadeUp {
