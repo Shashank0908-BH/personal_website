@@ -1,9 +1,9 @@
 .group {
     margin-bottom: 2rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.02);
     border-radius: 12px;
     padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .category {
@@ -33,7 +33,7 @@
 }
 
 .skill {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.05);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-size: 0.9rem;
