@@ -173,11 +173,6 @@ export default function Home() {
       </Section>
 
       <footer style={{ padding: '4rem 0', textAlign: 'center', color: 'var(--text-secondary)', borderTop: '1px solid var(--glass-border)', background: 'var(--glass-bg)', marginTop: '4rem' }}>
-        <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
-          <a href="https://github.com/Shashank0908-BH" target="_blank" rel="noopener noreferrer" style={{ padding: '0.5rem 1rem', borderRadius: '8px', background: 'rgba(0,0,0,0.05)', fontWeight: '500', transition: 'all 0.2s' }}>GitHub</a>
-          <a href="mailto:shashankwork0908@gmail.com" style={{ padding: '0.5rem 1rem', borderRadius: '8px', background: 'rgba(0,0,0,0.05)', fontWeight: '500', transition: 'all 0.2s' }}>Email</a>
-          {/* Add LinkedIn here if available */}
-        </div>
         <p style={{ marginBottom: '0.5rem', fontWeight: '500', color: 'var(--text-primary)' }}>Shashank Singh</p>
         <p style={{ fontSize: '0.9rem' }}>Greater Noida, India</p>
         <p style={{ fontSize: '0.85rem', marginTop: '2rem', opacity: 0.7 }}>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
