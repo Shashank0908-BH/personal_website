@@ -1,0 +1,68 @@
+.card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 40px -10px rgba(99, 102, 241, 0.2);
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.role {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--synapse-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+}
+
+.card:hover .tag {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--silicon-primary);
+    border-color: rgba(99, 102, 241, 0.2);
+}
