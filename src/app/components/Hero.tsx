@@ -25,20 +25,7 @@ export default function Hero() {
                 </div>
 
                 <div style={{ marginTop: '2.5rem', opacity: 0, animation: 'fadeUp 0.8s ease-out 1s forwards' }}>
-                    <a href="mailto:shashankwork0908@gmail.com" style={{
-                        display: 'inline-block',
-                        padding: '1rem 2rem',
-                        background: 'var(--silicon-primary)',
-                        color: '#fff',
-                        borderRadius: '99px',
-                        fontWeight: '600',
-                        letterSpacing: '0.02em',
-                        boxShadow: '0 4px 20px rgba(79, 70, 229, 0.4)',
-                        transition: 'transform 0.2s'
-                    }}
-                        onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-                        onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                    >
+                    <a href="mailto:shashankwork0908@gmail.com" className={styles['cta-button']}>
                         Let's Connect
                     </a>
                 </div>
