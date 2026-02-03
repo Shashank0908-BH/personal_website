@@ -2,21 +2,27 @@ import Hero from './components/Hero';
 import Section from './components/Section';
 import Card from './components/Card';
 import SkillGroup from './components/SkillGroup';
-import styles from './components/Hero.module.css'; // Reusing for highlight class
+import styles from './components/Hero.module.css';
 
 export default function Home() {
   const previousVentures = [
     {
       title: 'HealthGPT',
       role: 'Founder & Chief Architect',
-      description: 'Generative AI health assistant served over 2,000 active users globally. Fine-tuned 7B+ parameter models on biomedical literature and built a RAG pipeline with sub-second latency.',
-      tags: ['LLM Fine-Tuning', 'RAG (Pinecone)', 'AWS Lambda', 'Scalability']
+      timeline: 'June 2022 – July 2024',
+      description: 'A Generative AI health assistant served over 2,000 active users globally.',
+      highlights: [
+        'Fine-tuned 7B+ parameter models on biomedical literature.',
+        'Built a RAG system using Pinecone vector database, achieving sub-second latency across 1M+ medical documents.',
+        'Deployed auto-scaling microservices on AWS Lambda and API Gateway, handling high concurrency with 99.9% uptime.'
+      ],
+      tags: ['LLM Fine-Tuning', 'RAG', 'Pinecone', 'AWS Lambda', 'Scalability']
     },
     {
       title: 'CivisAI',
       role: 'Founder',
-      description: 'Current Affairs Copilot for competitive exams. Streamlined news synthesis and syllabus mapping using NLP.',
-      tags: ['NLP', 'EdTech', 'Information Retrieval']
+      description: 'Current Affairs Copilot specifically designed for competitive exam aspirants (UPSC). Streamlines information retrieval, news synthesis, and syllabus mapping.',
+      tags: ['NLP', 'EdTech', 'Information Retrieval', 'News Synthesis']
     }
   ];
 
@@ -24,13 +30,24 @@ export default function Home() {
     {
       title: 'Centyle',
       role: 'Application Team Intern',
-      description: 'Engineering cloud-agnostic genomics workflows using Docker and Galaxy. Automating host-free phytoplasma assembly pipelines and standardizing transcriptome analysis.',
-      tags: ['Docker', 'Galaxy', 'Genomics Pipelines', 'Python']
+      timeline: 'Nov 2025 – Present',
+      description: 'Engineering cloud-agnostic genomics workflows.',
+      highlights: [
+        'Engineered workflows using Docker and Galaxy for large-scale omics data.',
+        'Executed host-free phytoplasma assembly pipelines using HISAT2, Spades, and QUAST (CLI).',
+        'Standardized transcriptome analysis (Control vs. Treated) using DESeq2, automating Volcano plots and Heatmaps.',
+        'Integrated Krait and Diamond BLASTx for microsatellite detection.'
+      ],
+      tags: ['Docker', 'Galaxy', 'Bioinformatics Pipelines', 'DESeq2', 'Python']
     },
     {
       title: 'Enterprise Case Management (NIC)',
       role: 'NLP Engineer',
-      description: 'Engineered an OCR and Transformer-based NLP pipeline to digitize 2,000+ judicial records, reducing retrieval time from 10 minutes to <2 seconds.',
+      description: 'Engineered an OCR and Transformer-based NLP pipeline to digitize 2,000+ judicial records.',
+      highlights: [
+        'Reduced document retrieval time from 10 minutes to <2 seconds (75% efficiency gain).',
+        'Implemented Transformer-based models for document understanding.'
+      ],
       tags: ['NLP', 'Transformers', 'OCR', 'Optimization']
     }
   ];
@@ -38,14 +55,25 @@ export default function Home() {
   const research = [
     {
       title: 'Neurotoxicity Prediction Platform',
-      role: 'CSIR-IITR (Summer 2025)',
-      description: 'Achieved 89.4% accuracy on 3K+ compounds using MobileNetV2, GNNs, and Transformers. Optimized parallel computing to reduce preprocessing from 20s to <5s.',
-      tags: ['MobileNetV2', 'GNNs', 'Computational Toxicology', 'Optimization']
+      role: 'CSIR-IITR',
+      timeline: 'Summer 2025',
+      description: 'Achieved 89.4% accuracy on 3K+ compounds used to predict neurotoxic effects.',
+      highlights: [
+        'Utilized MobileNetV2 (framework), GNNs, and Transformers in an ensemble approach.',
+        'Validated results against SVM and Random Forest classifiers.',
+        'Deployed a Flask REST API with real-time molecular featurization.',
+        'Parallel computing optimization reducing preprocessing from 20s to <5s per compound.'
+      ],
+      tags: ['MobileNetV2', 'GNNs', 'Computational Toxicology', 'Flask', 'Optimization']
     },
     {
       title: 'MILLETACT',
       role: 'Publication',
-      description: 'Computational treasury of millet-based bioactive compounds. Submitted to Food Bioscience.',
+      description: 'Computational treasury of millet-based bioactive compounds.',
+      highlights: [
+        'Submitted to Food Bioscience.',
+        'Computational analysis of bioactive compounds contributing to nutritional informatics.'
+      ],
       tags: ['Bioinformatics', 'Nutritional Informatics', 'Research']
     }
   ];

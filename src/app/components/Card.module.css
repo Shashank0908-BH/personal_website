@@ -28,6 +28,13 @@
     color: var(--synapse-primary);
     margin-bottom: 0.5rem;
     display: block;
+    font-weight: 600;
+}
+
+.timeline {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
 }
 
 .title {
@@ -40,8 +47,21 @@
     color: var(--text-secondary);
     line-height: 1.6;
     font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.highlights {
     margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
     flex-grow: 1;
+    /* Pushes tags to bottom */
+}
+
+.highlights li {
+    margin-bottom: 0.5rem;
 }
 
 .tags {
