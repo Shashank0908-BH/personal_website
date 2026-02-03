@@ -20,7 +20,7 @@ export default function Hero() {
 
                 <div className={styles['mission-box']}>
                     <p className={styles['mission-text']}>
-                        Founder @ <span className={styles.highlight}>SynDx</span> | B.Tech Biotechnology (Drug Discovery & AI).
+                        Founder @ <a href="https://syndxlabs.com" target="_blank" rel="noopener noreferrer" className={styles.highlight} style={{ textDecoration: 'none', cursor: 'pointer' }}>SynDx</a> | B.Tech Biotechnology (Drug Discovery & AI).
                     </p>
                 </div>
             </div>
